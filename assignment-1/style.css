@@ -2,3 +2,144 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.header {
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.header * {
+  display: inline;
+}
+
+.user {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+input {
+  border: 1px solid rgba(182, 178, 178, 0.649);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  background-color: rgba(254, 65, 65, 0.649);
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button-add {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+
+.responsive-table {
+  width: 100%;
+  overflow: auto;
+}
+
+table, th, td{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Thong bao Add book */
+
+#click-button-add {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  border: 2px solid rgba(182, 178, 178, 0.649);
+  display: none;
+}
+
+#close-add {
+  float: right;
+}
+
+#notification-addbook, #close-add {
+  display: inline;
+  padding-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.input-field {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px 0;
+}
+
+#button-create {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Thong bao Delete */
+#click-button-delete {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  margin: auto 0;
+  background-color: #fff;
+  border: 2px solid rgba(182, 178, 178, 0.649);
+  display: none;
+}
+
+#notification-titledelete, #close-delete {
+  display: inline;
+}
+
+#close-delete {
+  float: right;
+}
+
+.delete-action {
+  text-decoration: underline; 
+  color: red;
+}
+
+#notification-textdelete {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#button-delete {
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(247, 231, 231, 0.5);
+}
+
+

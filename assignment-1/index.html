@@ -1,14 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Bookstore</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<html lang="en">
 
-  <body>
-    Hello world
-    <script src="script.js"></script>
-  </body>
+<head>
+  <title>DF Frontend 2023</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Liên kết với file css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Liên kết với file js -->
+  <script src="script.js"></script>
+  <!-- Liên kết với web Font Awesome để lấy icon -->
+  <script src="https://kit.fontawesome.com/08daca09a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1 style="font-size: 25px;">Bookstore</h1>
+    <div class="user">
+      <i class="fa-solid fa-circle-user" style="color: #aaaaaa; font-size: 25px;"></i>
+      <span style="margin-left: 10px;">John Doe</span>
+    </div>
+  </div>
+
+  <hr style="margin: 0;">
+
+
+  <div class="button-add" style="text-align: right;">
+    <input type="text" placeholder="Search books">
+    <button id="addbutton">Add book</button>
+  </div>
+
+
+  <div id="book-table" class="responsive-table">
+    <table>
+      <thead style="text-align: left;">
+        <th>Name</th>
+        <th>Author</th>
+        <th>Topic</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="book-title">Refactoring</td>
+          <td>Martin Fowler</td>
+          <td>Programming</td>
+          <td class="delete-action">Delete</td>
+        </tr>
+        <tr>
+          <td class="book-title">Designing Data-Intesive Applications</td>
+          <td>Martin Kleppmann</td>
+          <td>Database</td>
+          <td class="delete-action">Delete</td>
+        </tr>
+        <tr>
+          <td class="book-title">The Phoenix Project</td>
+          <td>Gene Kim</td>
+          <td>DevOps</td>
+          <td class="delete-action">Delete</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="click-button-add">
+    <i class="fa-solid fa-xmark" id="close-add" style="color: #7a7a7a;"></i>
+    <strong id="notification-addbook">Add book</strong>
+    <label class="input-label" for="name-book">Name</label>
+    <input class="input-field" type="text" id="name-book" name="name-book">
+    <label class="input-label" for="author-book">Author</label>
+    <input class="input-field" type="text" id="author-book" name="author-book">
+    <label class="input-label" for="topic-book">Topic</label>
+    <select class="input-field" name="topic-book" id="topic-book">
+      <option value="Programming">Programming</option>
+      <option value="Database">Database</option>
+      <option value="DevOps">DevOps</option>
+    </select>
+    <button id="button-create">Create</button>
+
+  </div>
+
+  <div id="click-button-delete" class="delete-notification">
+    <i class="fa-solid fa-xmark" id="close-delete" style="color: #7a7a7a;"></i>
+    <strong id="notification-titledelete">Delete book</strong>
+    <p id="notification-textdelete">Do you want to delete <span id="dynamic-content"></span> book?</p>
+    <button id="button-delete">Delete</button>
+    <button id="button-cancel">Cancel</button>
+  </div>
+
+</body>
+
 </html>
